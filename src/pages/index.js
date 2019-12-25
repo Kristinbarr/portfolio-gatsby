@@ -1,12 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "./layout"
 import Headshot from "../components/headshot"
 import SEO from "../components/seo"
-
-import { container } from "../styles/mainStyles"
-
 
 const AboutPage = () => (
   <Layout>
@@ -23,7 +19,6 @@ const AboutPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Headshot />
     </div>
-    <Link to="/about">About page</Link>
   </Layout>
 )
 

@@ -1,18 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { HeaderContainer, HeaderInner, HeaderBar, HeaderH1 } from "../styles/headerStyles"
+
+// import { css } from "@emotion/core"
+import { HeaderContainer, HeaderInner, HeaderBar, HeaderH1, linkStyles } from "../styles/headerStyles"
 
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <HeaderBar />
     <HeaderInner>
       <HeaderH1>
-        <Link
+        <Link linkStyles
           to="/"
-          style={{
-            textDecoration: `none`,
-          }}
+          // style={{
+          //   textDecoration: `none`,
+          // }}
         >
           {siteTitle}
         </Link>
