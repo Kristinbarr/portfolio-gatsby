@@ -1,13 +1,13 @@
 import React from "react"
 
-import Layout from "./layout"
+import Layout from "../components/layout"
 import Headshot from "../components/headshot"
 import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About Page" />
-    <h1>About</h1>
+    <SEO title="About" />
+    <h3>About</h3>
     <p>
       I’m a web developer based in NYC with experience designing and developing
       user interfaces, testing and debugging. Expert with a variety of
