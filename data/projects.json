@@ -2,8 +2,15 @@
   {
     "title": "Founder Grants",
     "slug": "founder-grants",
-    "url": "https://kristinbarr.com/",
-    "image": "",
+    "url": "https://foundergrants.com/",
+    "image": "./images/thumb-foundergrants.png",
+    "description": "Grant aggregator for startup founders"
+  },
+  {
+    "title": "Reddit Ranker",
+    "slug": "reddit-ranker",
+    "url": "https://post-here-frontend-n33nsapg6.now.sh/",
+    "image": "./images/thumb-redditranker.png",
     "description": "Grant aggregator for startup founders"
   }
 ]
