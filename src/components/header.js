@@ -11,46 +11,64 @@ const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   maxwidth: 960;
-  padding: 1.45rem 1rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
 `
 const HeaderBar = styled.div`
   background: #b24af2;
   height: 8px;
 `
-const H1 = styled.h1`
+const HomeLinks = styled.h1`
+  display: inline;
   margin: 0;
   font-size: 1.5rem;
 `
-const NavLinks = styled.h4`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
 const homeLink = css`
+  padding-right: .25rem;
   text-decoration: none;
   color: #4f4f4f;
+`
+const Span = styled.span`
+  font-size: 0.8rem;
+  font-weight: 100;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  border-left: 1px solid #4f4f4f;
+  color: #4f4f4f;
+  &:first-of-type {
+    border-left: none;
+  }
+`
+const NavLinks = styled.h6`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
 `
 const navLink = css`
   text-decoration: none;
+  font-weight: 100;
+  padding: 0 0.6em;
   border-left: 1px solid #4f4f4f;
-  padding: 0 1em;
   color: #4f4f4f;
-  &:first-child {
+  &:first-of-type {
     border-left: none;
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderContainer>
     <HeaderBar />
     <HeaderInner>
-      <H1>
-        <Link css={homeLink} to="/">
-          {siteTitle}
+      <HomeLinks>
+        <Link to="/" css={homeLink}>
+          Kristin Barr
         </Link>
-      </H1>
+        <Span>Developer</Span>
+        <Span>Designer</Span>
+        <Span>Creator</Span>
+      </HomeLinks>
       <NavLinks>
         <Link to="/about" css={navLink}>
           About
