@@ -9,8 +9,29 @@
   {
     "title": "Reddit Ranker",
     "slug": "reddit-ranker",
-    "url": "https://post-here-frontend-n33nsapg6.now.sh/",
+    "url": "https://reddit-ranker.netlify.com",
     "image": "./images/thumb-redditranker.png",
-    "description": "Grant aggregator for startup founders"
+    "description": "Reddit post draft editor and best subreddit predictor"
+  },
+  {
+    "title": "Celebrity, Dead or Alive?",
+    "slug": "celebrity-dead-or-alive",
+    "url": "https://celebrity-dead-alive-frontend.netlify.com/",
+    "image": "./images/thumb-celebrity.png",
+    "description": "Timed celebrity quiz with leaderboard and scoreboard"
+  },
+  {
+    "title": "PairMe",
+    "slug": "pair-me",
+    "url": "https://pair-me.netlify.com/",
+    "image": "./images/thumb-pairme.png",
+    "description": "Pair program matchmaking app"
+  },
+  {
+    "title": "Pic Script",
+    "slug": "pic-script",
+    "url": "https://kristinbarr.github.io/pic-script/",
+    "image": "./images/thumb-picscript.png",
+    "description": "Inspirational quote and image juxtaposing build"
   }
 ]
