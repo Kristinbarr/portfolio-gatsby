@@ -11,13 +11,19 @@ const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  maxwidth: 960;
   margin: 0 auto;
-  padding: 1.25rem 1rem;
+  padding: 1rem 1rem;
 `
 const HeaderBar = styled.div`
-  background: #b24af2;
+  position: sticky;
+  top: 0px;
+  right: 0%;
+  bottom: auto;
+  left: 0%;
+  z-index: 100;
+  width: 100%;
   height: 8px;
+  background: #b24af2;
 `
 const HomeLinks = styled.h1`
   display: inline;
@@ -25,9 +31,13 @@ const HomeLinks = styled.h1`
   font-size: 1.5rem;
 `
 const HomeLink = styled(Link)`
-  padding-right: 0.25rem;
+  padding-right: 0.5rem;
   text-decoration: none;
   color: #4f4f4f;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    color: #b24af2;
+  }
 `
 const Span = styled.span`
   font-size: 0.8rem;
@@ -55,30 +65,37 @@ const NavLink = styled(Link)`
   &:first-of-type {
     border-left: none;
   }
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    color: #b24af2;
+    text-decoration: underline;
+  }
 `
 
 const Header = () => (
-  <HeaderContainer>
+  <>
     <HeaderBar />
-    <HeaderInner>
-      <HomeLinks>
-        <HomeLink to="/">Kristin Barr</HomeLink>
-        <Span>Developer</Span>
-        <Span>Designer</Span>
-        <Span>Creator</Span>
-      </HomeLinks>
-      <NavLinks>
-        <NavLink nav={"/"} to="/">
-          About
-        </NavLink>
-        <NavLink nav={"/projects/"} to="/projects/">
-          Projects
-        </NavLink>
-        <NavLink to="/cv">CV</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-      </NavLinks>
-    </HeaderInner>
-  </HeaderContainer>
+    <HeaderContainer>
+      <HeaderInner>
+        <HomeLinks>
+          <HomeLink to="/">Kristin Barr</HomeLink>
+          <Span>Developer</Span>
+          <Span>Designer</Span>
+          <Span>Creator</Span>
+        </HomeLinks>
+        <NavLinks>
+          <NavLink nav={"/"} to="/">
+            About
+          </NavLink>
+          <NavLink nav={"/projects/"} to="/projects/">
+            Projects
+          </NavLink>
+          <NavLink to="/cv">CV</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </NavLinks>
+      </HeaderInner>
+    </HeaderContainer>
+  </>
 )
 
 Header.propTypes = {
