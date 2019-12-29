@@ -24,8 +24,8 @@ const HomeLinks = styled.h1`
   margin: 0;
   font-size: 1.5rem;
 `
-const homeLink = css`
-  padding-right: .25rem;
+const HomeLink = styled(Link)`
+  padding-right: 0.25rem;
   text-decoration: none;
   color: #4f4f4f;
 `
@@ -46,7 +46,7 @@ const NavLinks = styled.h6`
   align-items: baseline;
   margin-bottom: 0;
 `
-const navLink = css`
+const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: 100;
   padding: 0 0.6em;
@@ -62,26 +62,20 @@ const Header = () => (
     <HeaderBar />
     <HeaderInner>
       <HomeLinks>
-        <Link to="/" css={homeLink}>
-          Kristin Barr
-        </Link>
+        <HomeLink to="/">Kristin Barr</HomeLink>
         <Span>Developer</Span>
         <Span>Designer</Span>
         <Span>Creator</Span>
       </HomeLinks>
       <NavLinks>
-        <Link to="/about" css={navLink}>
+        <NavLink nav={"/"} to="/">
           About
-        </Link>
-        <Link to="/projects" css={navLink}>
+        </NavLink>
+        <NavLink nav={"/projects/"} to="/projects/">
           Projects
-        </Link>
-        <Link to="/cv" css={navLink}>
-          CV
-        </Link>
-        <Link to="/contact" css={navLink}>
-          Contact
-        </Link>
+        </NavLink>
+        <NavLink to="/cv">CV</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </NavLinks>
     </HeaderInner>
   </HeaderContainer>
