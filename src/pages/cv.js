@@ -1,14 +1,22 @@
 import React from "react"
-// import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import StyledBackgroundSection from "../components/BackgroundSection"
+
+const H3 = styled.h3`
+  margin: 3rem 0 1.85rem 4.5rem;
+`
 
 const CV = () => (
   <Layout>
-    <SEO title="CV" />
-    <h1>CV</h1>
-    <p>Kristin Barr CV</p>
+    <StyledBackgroundSection>
+      <SEO title="CV" />
+      <H3>CV</H3>
+
+      <p>Kristin Barr CV</p>
+    </StyledBackgroundSection>
   </Layout>
 )
 
