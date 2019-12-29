@@ -1,20 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
-const Footer = (props) => {
-  // const data = useStaticQuery(
-  //   graphql`
-  //     query SiteTitleQuery {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-  console.log("children in footer: ", props)
+const A = styled.a`
+  color: rgba(102, 170, 0, 0.7);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+const Footer = () => {
   return (
     <footer
       style={{
@@ -30,19 +27,12 @@ const Footer = (props) => {
         padding: `1rem`,
         marginTop: `1rem`,
         textAlign: `center`,
-        color: `#4f4f4f`,
-        fontSize: `.8rem`,
+        color: `rgba(102,170,0,.7)`,
+        fontSize: `.7rem`,
       }}
     >
-      © {new Date().getFullYear()}, Built with{" "}
-      <a
-        href="https://www.gatsbyjs.org"
-        style={{
-          color: `#4f4f4f`,
-        }}
-      >
-        Gatsby
-      </a>
+      © Kristin Barr {new Date().getFullYear()}, Built with{" "}
+      <A href="https://www.gatsbyjs.org">Gatsby</A>
     </footer>
   )
 }
