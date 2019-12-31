@@ -1,0 +1,107 @@
+[
+  {
+    "skills": [
+      {
+        "designer-skills": "Adobe Creative Suite - Photoshop, Bridge, InDesign, Illustrator, XD and Figma, digital asset management, ",
+        "developer-skills": "HTML, CSS (Sass/Less, Material UI, Semantic UI, Styled Components, Bootstrap), JavaScript ES6, React, Redux, Node, Express, SQL, PostgreSQL, SQLite, Knex, Sequelize, Git/GitHub, Java, Jest, Jasmine",
+        "soft-skills": "Enterprise client support, tutoring individuals and small groups, omni-channel, cross-functional, remote team communication"
+      }
+    ]
+  },
+  {
+    "experience": [
+      {
+        "company": "Lambda School",
+        "title": "Team Lead",
+        "location": "Remote, New York, NY",
+        "date": "Nov 2019-present",
+        "description": [
+          "Leading daily remote standups and indivuadual meetings to assess projects and lesson material",
+          "Documenting student progress and communicate with administrators to escalate or celebrate students",
+          "Overseeing and guiding students to ensure a welcoming environment to learn and share remotely",
+          "Collaborate with instructors to recognize issues students are facing and recommend solutions"
+        ]
+      },
+      {
+        "company": "Bright River",
+        "title": "US Production Manager and Client Support",
+        "location": "New York, NY",
+        "date": "Apr 2017-May 2018",
+        "description": [
+          "Troubleshooting applications, databases and scripts by analyzing system logs and reporting defects",
+          "Utilizing analysis of KPIs and QA feedback to meet SLA deadlines and client expectations",
+          "Managing ongoing support and communication with enterprise and corporate clients"
+        ]
+      },
+      {
+        "company": "Saks Fifth Avenue",
+        "title": "Saks.com Lead Image Editor",
+        "location": "New York, NY",
+        "date": "Jan 2016-Mar 2017",
+        "description": [
+          "Improving workflow efficiency by implementing cloud-based imaging solutions",
+          "Meeting strict image-to-site timelines and QA adherence of imagery and video content",
+          "Partnering with remote teams to analyze and resolve complex workflow bottlenecks"
+        ]
+      },
+      {
+        "company": "Lord & Taylor",
+        "title": "eCommerce Imaging Manager",
+        "location": "New York, NY",
+        "date": "Feb 2013-Dec 2015",
+        "description": [
+          "Overseeing the processing and uploading of up to 23,000 digital assets per month",
+          "Onboarding and training new hires and producing best-practice guideline materials"
+        ]
+      },
+      {
+        "company": "Lord & Taylor",
+        "title": "Digital Imaging Editor",
+        "location": "New York, NY",
+        "date": "Aug 2011-Feb 2013",
+        "description": [
+          "Assisting site migration of all images to new web platform, batch renaming to new standard",
+          "Quality assurance and retouching of editorial email, homepage and banner images"
+        ]
+      }
+    ]
+  },
+  {
+    "other_experience": [
+      {
+        "organization": "Hacker Hours Meetup Group",
+        "role": "Co-Organizer and Bi-weekly Event Host",
+        "location": "Brooklyn, NY",
+        "date": "Summer 2019"
+      },
+      {
+        "organization": "Smashing Conference, Smashing Mag",
+        "role": "Event Volunteer",
+        "location": "New York, NY",
+        "date": "Oct 2019"
+      },
+      {
+        "organization": "JAMstack Developer Conference",
+        "role": "Event Volunteer",
+        "location": "New York, NY",
+        "date": "Apr 2019"
+      }
+    ]
+  },
+  {
+    "education": [
+      {
+        "school": "Lambda School",
+        "degree": "Web Development and Computer Science",
+        "location": "New York, NY",
+        "date": "2019"
+      },
+      {
+        "school": "Parsons The New School of Design",
+        "degree": "Bachelor of Fine Arts, Photography",
+        "location": "New York, NY",
+        "date": "2011"
+      }
+    ]
+  }
+]
