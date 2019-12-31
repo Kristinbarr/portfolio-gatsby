@@ -13,16 +13,37 @@ const ProjectContainer = styled.div`
   background: #fff;
   border: 3px solid #4f4f4f;
   box-shadow: 4px 4px 0px #b24af2;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    box-shadow: 8px 8px 0px #b24af2;
+  }
 `
 const StyledWrapperLeft = styled.div`
   width: 20rem;
-  margin: 1rem 1rem 1rem .5rem;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  margin: 1rem 1rem 1rem 0.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out 0s;
+  &:hover:after {
+    // box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    // transform: scale(1.025, 1.025);
+    // background: rgba(0,0,0, .7);
+    // z-index: 5;
+    // content: "Go to live site";
+  }
 `
 const StyledWrapperRight = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+`
+const StyledImage = styled(Image)`
+  &:hover:after {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    // transform: scale(1.025, 1.025);
+    // background: rgba(0, 0, 0, 0.7);
+    // z-index: 5;
+    // content: "Go to live site";
+  }
 `
 const HGroup = styled.hgroup`
   display: flex;
@@ -53,7 +74,7 @@ const ProjectPreview = ({
   <ProjectContainer>
     <StyledWrapperLeft>
       <Link to={`${url_live}`}>
-        <Image fluid={imageData} alt={title} />
+        <StyledImage fluid={imageData} alt={title} />
       </Link>
     </StyledWrapperLeft>
     <StyledWrapperRight>
