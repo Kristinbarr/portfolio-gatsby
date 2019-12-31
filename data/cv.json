@@ -1,20 +1,45 @@
 [
   {
-    "skills": [
-      {
-        "designer-skills": "Adobe Creative Suite - Photoshop, Bridge, InDesign, Illustrator, XD and Figma, digital asset management, ",
-        "developer-skills": "HTML, CSS (Sass/Less, Material UI, Semantic UI, Styled Components, Bootstrap), JavaScript ES6, React, Redux, Node, Express, SQL, PostgreSQL, SQLite, Knex, Sequelize, Git/GitHub, Java, Jest, Jasmine",
-        "soft-skills": "Enterprise client support, tutoring individuals and small groups, omni-channel, cross-functional, remote team communication"
-      }
-    ]
-  },
-  {
+    "skills_designer": [
+      "Adobe Creative Suite",
+      "Photoshop",
+      "Bridge",
+      "InDesign",
+      "Illustrator",
+      "XD",
+      "Figma",
+      "Web Design",
+      "User Experience Design",
+      "Photo Retouching",
+      "Logo Creation",
+      "Digital Asset Management"
+    ],
+    "skills_developer": [
+      "HTML5",
+      "CSS, SASS/LESS",
+      "Material UI, Semantic UI",
+      "Styled Components, Bootstrap",
+      "JavaScript ES6",
+      "React, Redux",
+      "Node.js, Express",
+      "SQL, PostgreSQL, SQLite",
+      "Knex, Sequelize",
+      "Git, GitHub",
+      "Java, Spring",
+      "Jest, Jasmine"
+    ],
+    "skills_soft": [
+      "Enterprise client support",
+      "Remote team leadership",
+      "Tutoring individuals and small groups",
+      "Cross-functional team communication"
+    ],
     "experience": [
       {
         "company": "Lambda School",
         "title": "Team Lead",
-        "location": "Remote, New York, NY",
-        "date": "Nov 2019-present",
+        "location": "Remote/NYC",
+        "date": "2019-present",
         "description": [
           "Leading daily remote standups and indivuadual meetings to assess projects and lesson material",
           "Documenting student progress and communicate with administrators to escalate or celebrate students",
@@ -25,8 +50,8 @@
       {
         "company": "Bright River",
         "title": "US Production Manager and Client Support",
-        "location": "New York, NY",
-        "date": "Apr 2017-May 2018",
+        "location": "NYC",
+        "date": "2017-2018",
         "description": [
           "Troubleshooting applications, databases and scripts by analyzing system logs and reporting defects",
           "Utilizing analysis of KPIs and QA feedback to meet SLA deadlines and client expectations",
@@ -36,8 +61,8 @@
       {
         "company": "Saks Fifth Avenue",
         "title": "Saks.com Lead Image Editor",
-        "location": "New York, NY",
-        "date": "Jan 2016-Mar 2017",
+        "location": "NYC",
+        "date": "2016-2017",
         "description": [
           "Improving workflow efficiency by implementing cloud-based imaging solutions",
           "Meeting strict image-to-site timelines and QA adherence of imagery and video content",
@@ -47,8 +72,8 @@
       {
         "company": "Lord & Taylor",
         "title": "eCommerce Imaging Manager",
-        "location": "New York, NY",
-        "date": "Feb 2013-Dec 2015",
+        "location": "NYC",
+        "date": "2013-2015",
         "description": [
           "Overseeing the processing and uploading of up to 23,000 digital assets per month",
           "Onboarding and training new hires and producing best-practice guideline materials"
@@ -57,51 +82,48 @@
       {
         "company": "Lord & Taylor",
         "title": "Digital Imaging Editor",
-        "location": "New York, NY",
-        "date": "Aug 2011-Feb 2013",
+        "location": "NYC",
+        "date": "2011-2013",
         "description": [
           "Assisting site migration of all images to new web platform, batch renaming to new standard",
           "Quality assurance and retouching of editorial email, homepage and banner images"
         ]
       }
-    ]
-  },
-  {
+    ],
     "other_experience": [
       {
         "organization": "Hacker Hours Meetup Group",
-        "role": "Co-Organizer and Bi-weekly Event Host",
+        "role": "Co-Organizer and Event Host",
         "location": "Brooklyn, NY",
         "date": "Summer 2019"
       },
       {
         "organization": "Smashing Conference, Smashing Mag",
         "role": "Event Volunteer",
-        "location": "New York, NY",
+        "location": "NYC",
         "date": "Oct 2019"
       },
       {
         "organization": "JAMstack Developer Conference",
         "role": "Event Volunteer",
-        "location": "New York, NY",
+        "location": "NYC",
         "date": "Apr 2019"
       }
-    ]
-  },
-  {
+    ],
     "education": [
       {
         "school": "Lambda School",
         "degree": "Web Development and Computer Science",
-        "location": "New York, NY",
-        "date": "2019"
+        "location": "NYC",
+        "date": "2019-2020"
       },
       {
         "school": "Parsons The New School of Design",
         "degree": "Bachelor of Fine Arts, Photography",
-        "location": "New York, NY",
-        "date": "2011"
+        "location": "NYC",
+        "date": "2007-2011"
       }
-    ]
+    ],
+    "download": "/data/KristinBarr_Resume.pdf"
   }
 ]
