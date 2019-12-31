@@ -7,15 +7,15 @@ import SEO from "../components/SEO"
 import StyledBackgroundSection from "../components/BackgroundSection"
 import ProjectPreview from "../components/ProjectPreview"
 
+const H3 = styled.h3`
+  margin: 3rem 0 1.85rem 4.5rem;
+`
 const StyledProjectsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 2rem 0;
-`
-const H3 = styled.h3`
-  margin: 3rem 0 1.85rem 4.5rem;
 `
 
 const Projects = () => {
@@ -46,6 +46,7 @@ const Projects = () => {
 
   const projects = data.allProjectsJson.edges
 
+  console.log("projects data.allProjectsJson.edges:", projects)
   return (
     <Layout>
       <StyledBackgroundSection>

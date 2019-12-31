@@ -1,7 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import Image from "gatsby-image"
 import styled from "@emotion/styled"
 import Footer from "./Footer"
 
@@ -30,9 +29,6 @@ const BackgroundSection = ({ className, children }) => {
   )
 
   const imageData = desktop.childImageSharp.fluid
-
-  console.log("imgData in BGsection", imageData)
-  console.log("children in BGsection: :", children)
 
   return (
     <Container>
