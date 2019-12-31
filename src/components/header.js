@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
 
 const HeaderContainer = styled.header`
   width: 100%;
@@ -68,7 +67,7 @@ const NavLink = styled(Link)`
   transition: all 0.3s ease-in-out 0s;
   &:hover {
     color: #b24af2;
-    text-decoration: underline;
+    transform: translate(0, -2px);
   }
 `
 
@@ -91,7 +90,6 @@ const Header = () => (
             Projects
           </NavLink>
           <NavLink to="/cv">CV</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
         </NavLinks>
       </HeaderInner>
     </HeaderContainer>
