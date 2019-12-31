@@ -9,9 +9,9 @@ const ProjectContainer = styled.div`
   align-items: center;
   width: 80%;
   padding: 1rem;
-  margin: 1rem;
+  margin-bottom: 2rem;
   background: #fff;
-  border: 3px solid #4f4f4f;
+  border: 2px solid #4f4f4f;
   box-shadow: 4px 4px 0px #b24af2;
   transition: all 0.3s ease-in-out 0s;
   &:hover {
