@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
   left: 0;
   z-index: 2;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 0.7rem;
   color: rgba(102, 170, 0, 0.7);
@@ -30,9 +30,10 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Contact />© Kristin Barr {new Date().getFullYear()}, Built with{" "}
-      <A href="https://www.gatsbyjs.org">Gatsby</A>
-      {" "}and{" "}
-      <A href="https://emotion.sh">👩‍🎤Emotion</A>
+      <A href="https://www.gatsbyjs.org">Gatsby</A> and{" "}
+      <A href="https://emotion.sh">
+        <span role="img">👩‍🎤</span>Emotion
+      </A>
     </StyledFooter>
   )
 }
