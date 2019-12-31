@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 import StyledBackgroundSection from "../components/BackgroundSection"
 import ProjectPreview from "../components/ProjectPreview"
 
-const H3 = styled.h3`
+const PageTitle = styled.h3`
   margin: 3rem 0 1.85rem 4.5rem;
 `
 const StyledProjectsWrapper = styled.div`
@@ -15,7 +15,6 @@ const StyledProjectsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem 0;
 `
 
 const Projects = () => {
@@ -51,7 +50,7 @@ const Projects = () => {
     <Layout>
       <StyledBackgroundSection>
         <SEO title="Projects" />
-        <H3>Projects</H3>
+        <PageTitle>Projects</PageTitle>
         <StyledProjectsWrapper>
           {projects.map(({ node: project }) => {
             const title = project.title

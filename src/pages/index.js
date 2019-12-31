@@ -25,14 +25,14 @@ const StyledWrapperRight = styled.div`
   transition: all 0.3s ease-in-out 0s;
   margin-top: 20%;
 `
-const H3 = styled.h3`
+const PageTitle = styled.h3`
   margin: 3rem 0 1.85rem 4.5rem;
 `
 
 const IndexPage = () => (
   <Layout>
     <StyledBackgroundSection>
-      <H3>About</H3>
+      <PageTitle>About</PageTitle>
       <StyledAboutWrapper>
         <StyledWrapperLeft>
           <SEO title="About" />
