@@ -4,6 +4,10 @@ import styled from "@emotion/styled"
 import Contact from "./Contact"
 
 const StyledFooter = styled.footer`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   z-index: 2;
@@ -29,11 +33,17 @@ const A = styled.a`
 const Footer = () => {
   return (
     <StyledFooter>
-      <Contact />© Kristin Barr {new Date().getFullYear()}, Built with{" "}
-      <A href="https://www.gatsbyjs.org">Gatsby</A> and{" "}
-      <A href="https://emotion.sh">
-        <span role="img">👩‍🎤</span>Emotion
-      </A>
+      <Contact />
+      <div>
+        © Kristin Barr {new Date().getFullYear()}, Built with{" "}
+        <A href="https://www.gatsbyjs.org">Gatsby</A> and{" "}
+        <A href="https://emotion.sh">
+          <span role="img" aria-label="bowie emoji">
+            👩‍🎤
+          </span>
+          Emotion
+        </A>
+      </div>
     </StyledFooter>
   )
 }
