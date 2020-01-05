@@ -7,27 +7,34 @@ import Image from "gatsby-image"
 const ContactContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 1rem;
+  width: 80%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `
 const StyledLink = styled.a`
-  text-align: center;
-  text-decoration: none;
-  color: #4f4f4f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: #4f4f4f;
+  transition: all 0.3s ease-in-out 0s;
+
   &:hover {
     filter: invert(33%) sepia(92%) saturate(2700%) hue-rotate(238deg)
       brightness(101%) contrast(90%);
   }
   &:hover {
-    text-shadow: 0 -15px 20px #000;
+    text-decoration: underline;
+    transform: scale(1.1);
+    // text-shadow: 0 -15px 20px #000;
   }
 `
-const Title = styled.div`
+const Title = styled.h6`
   padding-top: 0.25rem;
 `
 const StyledImage = styled(Image)`
@@ -64,7 +71,7 @@ const Contact = () => {
         const url = link.url
         const imageData = link.image.childImageSharp.fluid
         return (
-          <StyledLink href={url} key={link.title}>
+          <StyledLink href={url} key={title}>
             <StyledImage fluid={imageData} />
             <Title>{title}</Title>
           </StyledLink>
