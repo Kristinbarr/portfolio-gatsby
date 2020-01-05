@@ -1,42 +1,51 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
-import Image from "gatsby-image"
 
 const DownloadWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
   margin-bottom: 3rem;
   background: #fff;
   border: 2px solid #4f4f4f;
   box-shadow: 4px 4px 0px #b24af2;
-`
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    box-shadow: 8px 8px 0px #b24af2;
+  }
+  `
 const A = styled.a`
+height: 3.5rem;
   color: #4f4f4f;
+  padding: 1rem 0 1rem 1.5rem;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
     color: #b24af2;
   }
 `
+const Img = styled.img`
+  width: 1.25rem;
+  margin: 0 1rem;
+`
 
-const CvDownload = () => {
+const CvDownload = ({ resumeLink }) => {
   const data = useStaticQuery(graphql`
     {
-      file(name: { eq: "KristinBarr_Resume" }) {
-        publicURL
+      imageSharp(original: { src: { regex: "/download/" } }) {
+        fluid(quality: 100, maxHeight: 40) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   `)
-  console.log('pub-url:' , data)
   return (
     <DownloadWrapper>
-      <A href={data.file.publicURL} download>
+      <A href={resumeLink} download>
         Full CV PDF Download
       </A>
-      {/* <Image /> */}
+      <Img src={data.imageSharp.fluid.src} />
     </DownloadWrapper>
   )
 }
