@@ -3,16 +3,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const HeaderContainer = styled.header`
-  width: 100%;
-`
-const HeaderInner = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1rem 1rem;
-`
+// breakpoints = [576, 768, 992, 1200]
+
 const HeaderBar = styled.div`
   position: sticky;
   top: 0px;
@@ -24,13 +16,27 @@ const HeaderBar = styled.div`
   height: 8px;
   background: #b24af2;
 `
-const HomeLinks = styled.h1`
-  display: inline;
-  margin: 0;
-  font-size: 1.5rem;
+const HeaderInner = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 `
-const HomeLink = styled(Link)`
-  padding-right: 0.5rem;
+const TitleLinks = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+const TitleLink = styled(Link)`
+  padding: 0 0.5rem 0 1.2rem;
   text-decoration: none;
   color: #4f4f4f;
   transition: all 0.3s ease-in-out 0s;
@@ -38,27 +44,44 @@ const HomeLink = styled(Link)`
     color: #b24af2;
   }
 `
-const Span = styled.span`
-  font-size: 0.8rem;
+const TitleDescriptions = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    margin-left: 0.5rem;
+  }
+`
+const Description = styled.span`
+  font-size: 0.9rem;
   font-weight: 100;
   vertical-align: middle;
-  padding: 0 0.6em;
+  padding: 0.05rem 1rem;
   border-left: 1px solid #4f4f4f;
   color: #4f4f4f;
   &:first-of-type {
     border-left: none;
   }
+  @media (max-width: 992px) {
+    padding: 0.05rem .6rem;
+  }
+  @media (max-width: 768px) {
+    margin-top: .25rem;
+  }
 `
-const NavLinks = styled.h6`
+const NavLinks = styled.h5`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+  }
 `
 const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: 100;
-  padding: 0 0.6em;
+  padding: 0 1.3rem;
   border-left: 1px solid #4f4f4f;
   color: #4f4f4f;
   &:first-of-type {
@@ -69,30 +92,38 @@ const NavLink = styled(Link)`
     color: #b24af2;
     transform: translate(0, -2px);
   }
+  @media (max-width: 992px) {
+    padding: 0 .75rem;
+  }
+  @media (max-width: 768px) {
+    // padding: 0 0.8rem;
+  }
 `
 
 const Header = () => (
   <>
     <HeaderBar />
-    <HeaderContainer>
-      <HeaderInner>
-        <HomeLinks>
-          <HomeLink to="/">Kristin Barr</HomeLink>
-          <Span>Developer</Span>
-          <Span>Designer</Span>
-          <Span>Creator</Span>
-        </HomeLinks>
-        <NavLinks>
-          <NavLink nav={"/"} to="/">
-            About
-          </NavLink>
-          <NavLink nav={"/projects/"} to="/projects/">
-            Projects
-          </NavLink>
-          <NavLink to="/cv">CV</NavLink>
-        </NavLinks>
-      </HeaderInner>
-    </HeaderContainer>
+    <HeaderInner>
+      <TitleLinks>
+        <TitleLink to="/">KRISTIN BARR</TitleLink>
+        <TitleDescriptions>
+          <Description>developer</Description>
+          <Description>designer</Description>
+          <Description>creator</Description>
+        </TitleDescriptions>
+      </TitleLinks>
+      <NavLinks>
+        <NavLink nav={"/"} to="/">
+          ABOUT
+        </NavLink>
+        <NavLink nav={"/projects/"} to="/projects/">
+          PROJECTS
+        </NavLink>
+        <NavLink nav={"/cv/"} to="/cv">
+          CV
+        </NavLink>
+      </NavLinks>
+    </HeaderInner>
   </>
 )
 
