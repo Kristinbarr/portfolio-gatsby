@@ -41,8 +41,8 @@ const CvTitle = styled.div`
 const SkillsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
   text-align: center;
   flex-wrap: wrap;
   width: 90%;
@@ -69,23 +69,24 @@ const SectionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   // flex-direction: column;
-  width: 90%;
+  width: 80%;
   text-align: center;
   margin-bottom: .25rem;
+  font-size: smaller;
 `
 const H4 = styled.h4`
   font-weight: normal;
-  padding: 0 1rem 0.35rem 1rem;
+  padding: 0 2rem 0.45rem 2rem;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: 1.25rem;
-  margin-bottom: .75rem;
+  margin-top: 1.35rem;
+  margin-bottom: .85rem;
 `
 const H5 = styled.h5`
   margin-bottom: .35rem;
   color: #4f4f4f;
   font-weight: bold;
 `
-const H6 = styled.h6`
+const JobLocation = styled.h6`
   font-weight: normal;
   color: #949494;
 `
@@ -95,15 +96,18 @@ const Span = styled.span`
   padding-left: .5rem;
   font-weight: normal;
 `
-const Li = styled.li`
-  font-size: 0.75rem;
-  line-height: 1;
-  margin-bottom: 0.25rem;
-`
+// const Li = styled.li`
+//   font-size: 0.75rem;
+//   line-height: 1;
+//   margin-bottom: 0.25rem;
+// `
 
 const CV = () => {
   const data = useStaticQuery(graphql`
     {
+      file(name: { eq: "KristinBarr_Resume" }) {
+        publicURL
+      }
       cvJson {
         skills_designer
         skills_developer
@@ -132,9 +136,7 @@ const CV = () => {
   `)
 
   const sections = data.cvJson
-
-  console.log("sections: ", sections)
-  // console.log("sections single: ", sections.skills_designer)
+  const resumeLink = data.file.publicURL
 
   return (
     <Layout>
@@ -154,7 +156,7 @@ const CV = () => {
                   <H5>Designer</H5>
                   <Skills>
                     {sections.skills_designer.map(skill => (
-                      <Skill>{skill}</Skill>
+                      <Skill >{skill}</Skill>
                     ))}
                   </Skills>
                 </SkillSection>
@@ -183,9 +185,9 @@ const CV = () => {
                     {job.company}
                     <Span>{job.title}</Span>
                   </H5>
-                  <H6>
+                  <JobLocation>
                     {job.location}, {job.date}
-                  </H6>
+                  </JobLocation>
                 </SectionWrapper>
               ))}
               <H4>Other Experience</H4>
@@ -195,9 +197,9 @@ const CV = () => {
                     {job.organization}
                     <Span>{job.role}</Span>
                   </H5>
-                  <H6>
+                  <JobLocation>
                     {job.location}, {job.date}
-                  </H6>
+                  </JobLocation>
                 </SectionWrapper>
               ))}
               <H4>Education</H4>
@@ -207,14 +209,14 @@ const CV = () => {
                     {school.school}
                     <Span>{school.degree}</Span>
                   </H5>
-                  <H6>
+                  <JobLocation>
                     {school.location}, {school.date}
-                  </H6>
+                  </JobLocation>
                 </SectionWrapper>
               ))}
             </StyledInnerSection>
           </CvContainer>
-          <CvDownload />
+          <CvDownload resumeLink={resumeLink} />
         </StyledWrapper>
       </StyledBackgroundSection>
     </Layout>
