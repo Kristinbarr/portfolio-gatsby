@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery } from "gatsby"
+import { useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import styled from "@emotion/styled"
 
@@ -47,19 +47,28 @@ const StyledImage = styled(Image)`
 `
 const HGroup = styled.hgroup`
   display: flex;
-  // flex-direction: column;
+  justify-content: space-between;
 `
 const H4 = styled.h4``
 const H5 = styled.h5``
 const H6 = styled.h6`
-  color: #aaa;
+  color: #999;
   margin-bottom: 0.65rem;
-`
-const ProjectLinkIcons = styled.div``
-const ProjectLink = styled.a`
-  padding-left: 1rem;
-  color: #4f4f4f;
   text-decoration: none;
+`
+const IconLinkWrapper = styled.div`
+  display: flex;
+`
+const ProjectLink = styled.a`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 .5rem;
+  text-decoration: none;
+`
+const StyledIcon = styled.img`
+  max-width: 1.15rem;
+  margin-bottom: .25rem;
 `
 const Li = styled.li`
   font-size: 0.75rem;
@@ -79,19 +88,28 @@ const ProjectPreview = ({
 }) => {
   const data = useStaticQuery(graphql`
     {
+      file(name: { eq: "contact-github" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 100) {
+            src
+          }
+        }
+      }
       imageSharp(original: { src: { regex: "/external-link/" } }) {
-        fluid(quality: 100) {
+        fluid(quality: 100, maxWidth: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
   `)
+  const linkIcon = data.imageSharp.fluid.src
+  const codeIcon = data.file.childImageSharp.fluid.src
   return (
     <ProjectContainer>
       <StyledWrapperLeft>
-        <Link to={`${url_live}`}>
+        <a href={`${url_live}`} target="_blank">
           <StyledImage fluid={imageData} alt={title} />
-        </Link>
+        </a>
       </StyledWrapperLeft>
       <StyledWrapperRight>
         <HGroup>
@@ -100,10 +118,16 @@ const ProjectPreview = ({
             <H5>{description}</H5>
             <H6>{date}</H6>
           </div>
-          <ProjectLinkIcons>
-            <ProjectLink href={url_live}>live</ProjectLink>
-            <ProjectLink href={url_code}>code</ProjectLink>
-          </ProjectLinkIcons>
+          <IconLinkWrapper>
+            <ProjectLink href={url_live}>
+              <StyledIcon src={linkIcon} />
+              <H6>live</H6>
+            </ProjectLink>
+            <ProjectLink href={url_code}>
+              <StyledIcon src={codeIcon} />
+              <H6>code</H6>
+            </ProjectLink>
+          </IconLinkWrapper>
         </HGroup>
         <ul>
           {details.map(detail => (
