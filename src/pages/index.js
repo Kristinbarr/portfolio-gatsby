@@ -6,6 +6,8 @@ import SEO from "../components/SEO"
 import StyledBackgroundSection from "../components/BackgroundSection"
 import Headshot from "../components/Headshot"
 
+// breakpoints = [576, 768, 992, 1200]
+
 const PageTitle = styled.h3`
   margin: 3rem 0 1.85rem 4.5rem;
   @media (max-width: 576px) {
@@ -25,18 +27,20 @@ const StyledAboutWrapper = styled.div`
 const StyledWrapperLeft = styled.div`
   width: 40%;
   min-height: calc(100vh - 290px);
-  // background: green;
+  @media (max-width: 992px) {
+    font-size: .85rem;
+  }
   @media (max-width: 576px) {
     min-height: 0;
     margin-bottom: 1rem;
     width: 80%;
     text-align: justify;
-    text-justify: inter-character;
+    // text-justify: inter-character;
   }
 `
 const StyledWrapperRight = styled.div`
   width: 25vw;
-  margin: 10% 0 5rem 5%;
+  margin: 20% 0 5rem 5%;
   transition: all 0.3s ease-in-out 0s;
   &:hover {
     transform: rotate(-5deg);
