@@ -20,7 +20,7 @@ const BackgroundSection = ({ className, children }) => {
         desktop: file(relativePath: { eq: "BG.png" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
