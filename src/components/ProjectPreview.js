@@ -3,6 +3,8 @@ import { useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import styled from "@emotion/styled"
 
+// breakpoints = [576, 768, 992, 1200]
+
 const ProjectContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -17,33 +19,32 @@ const ProjectContainer = styled.div`
   &:hover {
     box-shadow: 8px 8px 0px #b24af2;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width: 576px) {
+    width: 90%;
+  }
 `
 const StyledWrapperLeft = styled.div`
-  width: 20rem;
+  width: 23rem;
   margin: 1rem 1rem 1rem 0.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out 0s;
-  &:hover:after {
-    // box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    // transform: scale(1.025, 1.025);
-    // background: rgba(0,0,0, .7);
-    // z-index: 5;
-    // content: "Go to live site";
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `
 const StyledWrapperRight = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding: 2rem 0.25rem 0 0.85rem;
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+    width: 90%;
+  }
 `
 const StyledImage = styled(Image)`
-  &:hover:after {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    // transform: scale(1.025, 1.025);
-    // background: rgba(0, 0, 0, 0.7);
-    // z-index: 5;
-    // content: "Go to live site";
-  }
 `
 const HGroup = styled.hgroup`
   display: flex;
@@ -63,12 +64,16 @@ const ProjectLink = styled.a`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   text-decoration: none;
 `
 const StyledIcon = styled.img`
   max-width: 1.15rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    transform: translateY(-2px);
+  }
 `
 const Li = styled.li`
   font-size: 0.75rem;
@@ -119,13 +124,11 @@ const ProjectPreview = ({
             <H6>{date}</H6>
           </div>
           <IconLinkWrapper>
-            <ProjectLink href={url_live}>
+            <ProjectLink href={url_live} target="_blank">
               <StyledIcon src={linkIcon} />
-              <H6>live</H6>
             </ProjectLink>
-            <ProjectLink href={url_code}>
+            <ProjectLink href={url_code} target="_blank">
               <StyledIcon src={codeIcon} />
-              <H6>code</H6>
             </ProjectLink>
           </IconLinkWrapper>
         </HGroup>
