@@ -32,7 +32,13 @@
       "Enterprise client support",
       "Remote team leadership",
       "Tutoring individuals and small groups",
-      "Cross-functional team communication"
+      "Cross-functional team communication",
+      "Problem-solving and resourcefulness",
+      "Mentorship",
+      "Attention to Detail",
+      "Critical Thinking",
+      "Creative thinking",
+      "Curiosity"
     ],
     "experience": [
       {
@@ -41,10 +47,10 @@
         "location": "Remote/NYC",
         "date": "2019-present",
         "description": [
-          "Leading daily remote standups and indivuadual meetings to assess projects and lesson material",
-          "Documenting student progress and communicate with administrators to escalate or celebrate students",
-          "Overseeing and guiding students to ensure a welcoming environment to learn and share remotely",
-          "Collaborate with instructors to recognize issues students are facing and recommend solutions"
+          "Leading daily remote standups and individual meetings to assess projects and lesson material",
+          "Project lead giving support and guidance for student build sprint weeks",
+          "Documenting student progress and collaborating with administrators to recognize issues and solutions",
+          "Overseeing and guiding students to ensure a welcoming environment to learn and share remotely"
         ]
       },
       {
@@ -95,7 +101,7 @@
         "organization": "Hacker Hours Meetup Group",
         "role": "Co-Organizer and Event Host",
         "location": "Brooklyn, NY",
-        "date": "Summer 2019"
+        "date": "2019"
       },
       {
         "organization": "Smashing Conference, Smashing Mag",
@@ -119,7 +125,7 @@
       },
       {
         "school": "Parsons The New School of Design",
-        "degree": "Bachelor of Fine Arts, Photography",
+        "degree": "BFA, Photography",
         "location": "NYC",
         "date": "2007-2011"
       }
