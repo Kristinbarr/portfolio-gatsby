@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 import Image from "gatsby-image"
@@ -15,6 +15,13 @@ const ContactContainer = styled.div`
   }
 `
 const StyledLink = styled.a`
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  &:hover {
+    transform: translate(0, -3px);
+  }
+`
+const InnerStyledLink = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,16 +29,10 @@ const StyledLink = styled.a`
   text-align: center;
   text-decoration: none;
   color: #4f4f4f;
-  transition: all 0.3s ease-in-out 0s;
-
   &:hover {
     filter: invert(33%) sepia(92%) saturate(2700%) hue-rotate(238deg)
       brightness(101%) contrast(90%);
-  }
-  &:hover {
     text-decoration: underline;
-    transform: scale(1.1);
-    // text-shadow: 0 -15px 20px #000;
   }
 `
 const Title = styled.h6`
@@ -63,7 +64,6 @@ const Contact = () => {
     }
   `)
   const links = data.allContactJson.edges
-  // console.log("links", links)
   return (
     <ContactContainer>
       {links.map(({ node: link }) => {
@@ -72,8 +72,10 @@ const Contact = () => {
         const imageData = link.image.childImageSharp.fluid
         return (
           <StyledLink href={url} key={title}>
-            <StyledImage fluid={imageData} />
-            <Title>{title}</Title>
+            <InnerStyledLink>
+              <StyledImage fluid={imageData} />
+              <Title>{title}</Title>
+            </InnerStyledLink>
           </StyledLink>
         )
       })}
