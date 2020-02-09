@@ -10,11 +10,10 @@
     "description": "Grant aggregator for startup founders",
     "date": "November-December 2019",
     "details": [
-      "Lorem ipsum dolor sit amet, adipis sed do eiusmod tempor magna",
-      "Eget mauris pharetra et ultrices neque ornare aenean",
-      "Suspendisse ultrices gravida dictum adipis fusce ut amet placerat",
-      "Ultrices gravida dictum fusce ut placerat orci ultrices nulla",
-      "Faucibus interdum posuere sit adipis amet consectetur"
+      "App for startup founders to apply for grants to fund their ideas",
+      "Working with a stakeholder to create, research and release features on a deadline",
+      "Adopted an existing codebase by another team and learning specified tech",
+      "Developer and designer, built using React, Redux, CSS (Material UI/ Material Table)"
     ]
   },
   {
@@ -28,11 +27,9 @@
     "description": "Reddit post draft editor and best subreddit predictor",
     "date": "October 2019",
     "details": [
-      "Lorem ipsum dolor sit amet, adipis sed do eiusmod tempor magna",
-      "Eget mauris pharetra et ultrices neque ornare aenean",
-      "Suspendisse ultrices gravida dictum adipis fusce ut amet placerat",
-      "Ultrices gravida dictum fusce ut placerat orci ultrices nulla",
-      "Faucibus interdum posuere sit adipis amet consectetur"
+      "Backend Node Developer using Express, Knex, SQL, SQLite, JWT",
+      "Endpoint testing testing with Jest and Supertest",
+      "Frontend build in React and Redux"
     ]
   },
   {
@@ -46,11 +43,10 @@
     "description": "Timed celebrity quiz with leaderboard and scoreboard",
     "date": "August 2019",
     "details": [
-      "Lorem ipsum dolor sit amet, adipis sed do eiusmod tempor magna",
-      "Eget mauris pharetra et ultrices neque ornare aenean",
-      "Suspendisse ultrices gravida dictum adipis fusce ut amet placerat",
-      "Ultrices gravida dictum fusce ut placerat orci ultrices nulla",
-      "Faucibus interdum posuere sit adipis amet consectetur"
+      "Collaborative build with 2 other React developers",
+      "React developer using HTML, CSS (Scss), React (hooks), utilizing RESTful APIs",
+      "Presented demo for app",
+      "Designed using Figma"
     ]
   },
   {
@@ -58,35 +54,15 @@
     "slug": "pic-script",
     "url_live": "https://kristinbarr.github.io/pic-script/",
     "url_live_icon": "/images/external-link.png",
-    "url_code": "https://github.com/Kristinbarr/pic-script",
+    "url_code": "https://github.com/Kristinbarr/pic-script/tree/source-code",
     "url_code_icon": "/images/contacts-github.png",
     "image": "./images/thumb-picscript.png",
     "description": "Inspirational quote and image juxtaposing build",
     "date": "July 2019",
     "details": [
-      "Lorem ipsum dolor sit amet, adipis sed do eiusmod tempor magna",
-      "Eget mauris pharetra et ultrices neque ornare aenean",
-      "Suspendisse ultrices gravida dictum adipis fusce ut amet placerat",
-      "Ultrices gravida dictum fusce ut placerat orci ultrices nulla",
-      "Faucibus interdum posuere sit adipis amet consectetur"
-    ]
-  },
-  {
-    "title": "PairMe",
-    "slug": "pair-me",
-    "url_live": "https://pair-me.netlify.com/",
-    "url_live_icon": "/images/external-link.png",
-    "url_code": "https://github.com/pairme/landing-page",
-    "url_code_icon": "/images/contacts-github.png",
-    "image": "./images/thumb-pairme.png",
-    "description": "Pair program matchmaking app",
-    "date": "July 2019",
-    "details": [
-      "Lorem ipsum dolor sit amet, adipis sed do eiusmod tempor magna",
-      "Eget mauris pharetra et ultrices neque ornare aenean",
-      "Suspendisse ultrices gravida dictum adipis fusce ut amet placerat",
-      "Ultrices gravida dictum fusce ut placerat orci ultrices nulla",
-      "Faucibus interdum posuere sit adipis amet consectetur"
+      "Generate juxtaposing random inspirational quotes and images, 2019",
+      "Consumes and displays fetched data from an API (Lorem Picsum)",
+      "Developer and designer, built using React, Redux, CSS (styled-components)"
     ]
   }
 ]
