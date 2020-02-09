@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
+// import Hamburger from "./Hamburger"
 
 // breakpoints = [576, 768, 992, 1200]
 
@@ -74,7 +75,11 @@ const NavLinks = styled.h5`
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
+  @media (max-width: 768px) {
+    // display: none;
+  }
   @media (max-width: 576px) {
+
     margin-top: 1rem;
   }
 `
@@ -87,16 +92,18 @@ const NavLink = styled(Link)`
   &:first-of-type {
     border-left: none;
   }
-  transition: all 0.3s ease-in-out 0s;
-  &:hover {
-    color: #b24af2;
-    transform: translate(0, -2px);
-  }
   @media (max-width: 992px) {
     padding: 0 .75rem;
   }
   @media (max-width: 768px) {
     // padding: 0 0.8rem;
+  }
+`
+const NavLinkText = styled.p`
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    color: #b24af2;
+    transform: translate(0, -3px);
   }
 `
 
@@ -114,15 +121,24 @@ const Header = () => (
       </TitleLinks>
       <NavLinks>
         <NavLink nav={"/"} to="/">
-          ABOUT
+          <NavLinkText>
+            ABOUT
+          </NavLinkText>
         </NavLink>
         <NavLink nav={"/projects/"} to="/projects/">
-          PROJECTS
+          <NavLinkText>
+            PROJECTS
+          </NavLinkText>
         </NavLink>
         <NavLink nav={"/cv/"} to="/cv">
-          CV
+          <NavLinkText>
+            CV
+          </NavLinkText>
         </NavLink>
       </NavLinks>
+      
+      {/* <Hamburger/> */}
+
     </HeaderInner>
   </>
 )
