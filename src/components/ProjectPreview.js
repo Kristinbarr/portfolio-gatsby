@@ -112,7 +112,7 @@ const ProjectPreview = ({
   return (
     <ProjectContainer>
       <StyledWrapperLeft>
-        <a href={`${url_live}`} target="_blank">
+        <a href={`${url_live}`} target="_blank" rel="noopener noreferrer">
           <StyledImage fluid={imageData} alt={title} />
         </a>
       </StyledWrapperLeft>
@@ -124,10 +124,18 @@ const ProjectPreview = ({
             <H6>{date}</H6>
           </div>
           <IconLinkWrapper>
-            <ProjectLink href={url_live} target="_blank">
+            <ProjectLink
+              href={url_live}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <StyledIcon src={linkIcon} />
             </ProjectLink>
-            <ProjectLink href={url_code} target="_blank">
+            <ProjectLink
+              href={url_code}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <StyledIcon src={codeIcon} />
             </ProjectLink>
           </IconLinkWrapper>
