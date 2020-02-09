@@ -4,12 +4,11 @@ import BackgroundImage from "gatsby-background-image"
 import styled from "@emotion/styled"
 import Footer from "./Footer"
 
-const Container = styled.div`
+const BgInnerContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  min-height: calc(100vh - 12rem);
+  min-height: calc(100vh - 72px);
   margin: 0 auto;
 `
 
@@ -31,7 +30,6 @@ const BackgroundSection = ({ className, children }) => {
   const imageData = desktop.childImageSharp.fluid
 
   return (
-    <Container>
       <BackgroundImage
         Tag="section"
         className={className}
@@ -39,19 +37,26 @@ const BackgroundSection = ({ className, children }) => {
         aria-label="Fullscreen Background"
         preserveStackingContext={true}
       >
-        {children}
-        <Footer children={children} />
+        <BgInnerContainer>
+          {children}
+          <Footer children={children} />
+        </BgInnerContainer>
       </BackgroundImage>
-    </Container>
   )
 }
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
-  background-position: left center;
+  min-height: calc(100vh - 72px);
+  background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
   background-color: transparent;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 78px);
+  }
 
   // These three crucial styles (if existing) are directly parsed and added to
   // the pseudo-elements without further ado (except when overwritten).
