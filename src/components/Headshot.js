@@ -1,6 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import headshot from "../images/kb-vector.png"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,20 +13,7 @@ import Img from "gatsby-image"
  */
 
 const Headshot = () => {
-  const { placeholderImage } = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "kb-vector.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  const image = placeholderImage.childImageSharp
-
-  return <Img fluid={image.fluid} />
+  return <img src={headshot} alt="headshot"/>
 }
 
 export default Headshot
