@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 const DownloadWrapper = styled.div`
@@ -18,7 +18,7 @@ const DownloadWrapper = styled.div`
 const A = styled.a`
 height: 3.5rem;
   color: #4f4f4f;
-  padding: 1rem 0 1rem 1.5rem;
+  padding: 1rem 1.25rem 1rem 0;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -42,10 +42,10 @@ const CvDownload = ({ resumeLink }) => {
   `)
   return (
     <DownloadWrapper>
+      <Img src={data.imageSharp.fluid.src} />
       <A href={resumeLink} download>
         Full CV PDF Download
       </A>
-      <Img src={data.imageSharp.fluid.src} />
     </DownloadWrapper>
   )
 }
