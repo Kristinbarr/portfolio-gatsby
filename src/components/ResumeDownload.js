@@ -30,7 +30,7 @@ const Img = styled.img`
   margin: 0 1rem;
 `
 
-const CvDownload = ({ resumeLink }) => {
+const ResumeDownload = ({ resumeLink }) => {
   const data = useStaticQuery(graphql`
     {
       imageSharp(original: { src: { regex: "/download/" } }) {
@@ -44,10 +44,10 @@ const CvDownload = ({ resumeLink }) => {
     <DownloadWrapper>
       <Img src={data.imageSharp.fluid.src} />
       <A href={resumeLink} download>
-        Full CV PDF Download
+        Full Resume PDF Download
       </A>
     </DownloadWrapper>
   )
 }
 
-export default CvDownload
+export default ResumeDownload

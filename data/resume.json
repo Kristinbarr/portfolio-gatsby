@@ -25,18 +25,19 @@
       "SQL, PostgreSQL, SQLite",
       "Knex, Sequelize",
       "Git, GitHub",
-      "Java, Spring",
-      "Jest, Jasmine"
+      "Jest, Jasmine",
+      "Python"
     ],
     "skills_soft": [
       "Enterprise client support",
       "Remote team leadership",
-      "Tutoring individuals and small groups",
       "Cross-functional team communication",
-      "Problem-solving and resourcefulness",
+      "Problem-solving",
+      "Resourcefulness",
       "Mentorship",
-      "Attention to Detail",
-      "Critical Thinking",
+      "Tutoring",
+      "Attention to detail",
+      "Critical thinking",
       "Creative thinking",
       "Curiosity"
     ],
@@ -55,7 +56,7 @@
       },
       {
         "company": "Bright River",
-        "title": "US Production Manager and Client Support",
+        "title": "US Production Manager, Client Support",
         "location": "NYC",
         "date": "2017-2018",
         "description": [

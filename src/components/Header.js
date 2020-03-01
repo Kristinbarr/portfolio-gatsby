@@ -44,6 +44,9 @@ const TitleLink = styled(Link)`
   &:hover {
     color: #b24af2;
   }
+  @media (max-width: 992px) {
+    padding-right: 0;
+  }
 `
 const TitleDescriptions = styled.div`
   display: flex;
@@ -64,7 +67,7 @@ const Description = styled.span`
     border-left: none;
   }
   @media (max-width: 992px) {
-    padding: 0.05rem .6rem;
+    padding: 0.05rem .5rem;
   }
   @media (max-width: 768px) {
     margin-top: .25rem;
@@ -94,6 +97,7 @@ const NavLink = styled(Link)`
   }
   @media (max-width: 992px) {
     padding: 0 .75rem;
+    font-size: .75rem;
   }
   @media (max-width: 768px) {
     // padding: 0 0.8rem;
@@ -130,9 +134,9 @@ const Header = () => (
             PROJECTS
           </NavLinkText>
         </NavLink>
-        <NavLink nav={"/cv/"} to="/cv">
+        <NavLink nav={"/resume/"} to="/resume">
           <NavLinkText>
-            CV
+            RESUME
           </NavLinkText>
         </NavLink>
       </NavLinks>
