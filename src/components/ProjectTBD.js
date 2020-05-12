@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import Layout from "./Layout"
 import styled from "@emotion/styled"
 
-// TODO: FUTURE PROJECT LINKING TO SEPARATE PAGE
+// TODO: FUTURE PROJECT LINKING TO SEPARATE PAGE (OR MODAL?)
 
 const Project = ({
   title,
