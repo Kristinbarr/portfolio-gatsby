@@ -10,14 +10,14 @@
     "url": "https://www.linkedin.com/in/kristinbarr/"
   },
   {
-    "title": "NYC",
-    "image": "./images/contact-location.png",
-    "url": "https://www.google.com/maps/place/New+York,+NY"
-  },
-  {
     "title": "Email",
     "image": "./images/contact-email.png",
     "url": "https://mail.google.com/mail/?view=cm&fs=1&to=kristinbarr@gmail.com&su=Reaching%20out%20from%20kristinbarr.com"
+  },
+  {
+    "title": "Dev.to",
+    "image": "./images/contact-dev.png",
+    "url": "https://dev.to/kristinbarr"
   },
   {
     "title": "Twitter",
