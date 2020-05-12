@@ -8,10 +8,12 @@
 <p align=center>Developer | Designer | Creator</p>
 
 ---
-<p align=justify>
-Hi, I'm Kristin! I'm a software developer with a passion for making beautiful apps.
 
-I'm based in New York City(Brooklyn) and also love things like cycling, podcasts, sewing and pets.
+<p style='margin:30px; text-align:justify; text-justify:inter-character;'>
+Hi, I'm Kristin! I'm a web developer with a passion for making beautiful apps. I have experience designing and developing user interfaces, testing and debugging. I'm also an expert with a variety of development and imaging software, interfacing with remote teams and enterprise clientele, and team member onboarding. I'm eager to power projects from concept to completion through teamwork, problem solving and thoughtful design.
+</p>
+<p style='margin:30px; text-align:justify; text-justify:inter-character;'>
+I'm based in New York City (Brooklyn) and also love things like cycling, podcasts, sewing and pets.
 </p>
 
 <br/>
@@ -33,18 +35,16 @@ I'm based in New York City(Brooklyn) and also love things like cycling, podcasts
 </p>
 
 <p align=center>
-  &nbsp;
   <img align=center width=20px src="./data/images/contact-github.png" alt="github" />
-  Github |
+  &nbsp;Github |
   <a href="https://github.com/kristinbarr">
     github.com/kristinbarr
   </a>
 </p>
 
 <p align=center>
-  &nbsp;
   <img align=center width=20px src="./data/images/contact-twitter.png" alt="twitter" />
-  Twitter |
+  &nbsp;Twitter |
   <a href="https://twitter.com/kbarrsuperstar">
     twitter.com/kbarrsuperstar
   </a>
@@ -54,10 +54,11 @@ I'm based in New York City(Brooklyn) and also love things like cycling, podcasts
 
 <p align=center>
   <img width=20px src=./src/images/download.png />
-  &nbsp;Download a PDF of my <a href="./data/KristinBarrResume.pdf">resume</a>
+  &nbsp;Download a PDF of my <a href="./data/KristinBarr_Resume.pdf">resume</a>
 </p>
 
 ---
+
 <br/>
 
 <p align=center> 💫 Thanks for visiting! </p>
