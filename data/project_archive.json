@@ -1,0 +1,85 @@
+[
+    {
+      "title": "Founder Grants",
+      "slug": "founder-grants",
+      "url_live": "https://foundergrants.com/",
+      "url_live_icon":"./images/external-link.png",
+      "url_code": "https://github.com/Lambda-School-Labs/startup-grant-database-fe",
+      "url_code_icon": "./images/contacts-github.png",
+      "image": "./images/thumb-foundergrants.png",
+      "description": "Grant aggregator for startup founders",
+      "date": "November-December 2019",
+      "details": [
+        "App for startup founders to apply for grants to fund their ideas",
+        "Working with a stakeholder to create, research and release features on a deadline",
+        "Adopted an existing codebase by another team and learning specified tech",
+        "Developer and designer, built using React, Redux, CSS (Material UI/ Material Table)"
+      ]
+    },
+    {
+      "title": "Reddit Ranker",
+      "slug": "reddit-ranker",
+      "url_live": "https://reddit-ranker.netlify.com",
+      "url_live_icon": "/images/external-link.png",
+      "url_code": "https://github.com/Build-Week-Post-Here/Back-End",
+      "url_code_icon": "/images/contacts-github.png",
+      "image": "./images/thumb-redditranker.png",
+      "description": "Reddit post draft editor and best subreddit predictor",
+      "date": "October 2019",
+      "details": [
+        "Backend Node Developer using Express, Knex, SQL, SQLite, JWT",
+        "Endpoint testing testing with Jest and Supertest",
+        "Frontend build in React and Redux"
+      ]
+    },
+    {
+      "title": "Celebrity, Dead or Alive?",
+      "slug": "celebrity-dead-or-alive",
+      "url_live": "https://celebrity-dead-alive-frontend.netlify.com/",
+      "url_live_icon": "/images/external-link.png",
+      "url_code": "https://github.com/Kristinbarr/bwcda-frontend-react",
+      "url_code_icon": "/images/contacts-github.png",
+      "image": "./images/thumb-celebrity.png",
+      "description": "Timed celebrity quiz with leaderboard and scoreboard",
+      "date": "August 2019",
+      "details": [
+        "Collaborative build with 2 other React developers",
+        "React developer using HTML, CSS (Scss), React (hooks), utilizing RESTful APIs",
+        "Presented demo for app",
+        "Designed using Figma"
+      ]
+    },
+    {
+      "title": "Pic Script",
+      "slug": "pic-script",
+      "url_live": "https://kristinbarr.github.io/pic-script/",
+      "url_live_icon": "/images/external-link.png",
+      "url_code": "https://github.com/Kristinbarr/pic-script/tree/source-code",
+      "url_code_icon": "/images/contacts-github.png",
+      "image": "./images/thumb-picscript.png",
+      "description": "Inspirational quote and image juxtaposing build",
+      "date": "July 2019",
+      "details": [
+        "Generate juxtaposing random inspirational quotes and images, 2019",
+        "Consumes and displays fetched data from an API (Lorem Picsum)",
+        "Developer and designer, built using React, Redux, CSS (styled-components)"
+      ]
+    },
+    {
+      "title": "PairMe",
+      "slug": "pair-me",
+      "url_live": "https://pair-me.netlify.com/",
+      "url_live_icon": "/images/external-link.png",
+      "url_code": "https://github.com/pairme/landing-page",
+      "url_code_icon": "/images/contacts-github.png",
+      "image": "./images/thumb-pairme.png",
+      "description": "Pair program matchmaking app built with React, Socket.io",
+      "date": "July 2019",
+      "details": [
+        "Built from scratch for 2.5-day Hackathon with 2 teammates",
+        "Sole developer and designer for fully responsive marketing site - HTML, CSS (Sass), gifs",
+        "Presented app for demo video: https://youtu.be/E1mbO6ztU6c"
+      ]
+    }
+  ]
+  
