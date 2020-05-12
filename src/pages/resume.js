@@ -140,7 +140,7 @@ const Resume = () => {
       resumeJson {
         skills_designer
         skills_developer
-        skills_soft
+        skills_professional
         experience {
           company
           title
@@ -198,9 +198,9 @@ const Resume = () => {
                   </Skills>
                 </SkillSection>
                 <SkillSection>
-                  <H5>Soft</H5>
+                  <H5>Professional</H5>
                   <Skills>
-                    {sections.skills_soft.map(skill => (
+                    {sections.skills_professional.map(skill => (
                       <Skill>{skill}</Skill>
                     ))}
                   </Skills>
