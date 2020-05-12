@@ -46,7 +46,7 @@ const ResumeTitle = styled.div`
 `
 const SkillsWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 0.85rem;
   line-height: 1.2rem;
   text-align: center;
@@ -140,7 +140,6 @@ const Resume = () => {
       resumeJson {
         skills_designer
         skills_developer
-        skills_professional
         experience {
           company
           title
@@ -182,14 +181,6 @@ const Resume = () => {
               <H4>Skills</H4>
               <SkillsWrapper>
                 <SkillSection>
-                  <H5>Designer</H5>
-                  <Skills>
-                    {sections.skills_designer.map(skill => (
-                      <Skill >{skill}</Skill>
-                    ))}
-                  </Skills>
-                </SkillSection>
-                <SkillSection>
                   <H5>Developer</H5>
                   <Skills>
                     {sections.skills_developer.map(skill => (
@@ -198,13 +189,21 @@ const Resume = () => {
                   </Skills>
                 </SkillSection>
                 <SkillSection>
+                  <H5>Designer</H5>
+                  <Skills>
+                    {sections.skills_designer.map(skill => (
+                      <Skill >{skill}</Skill>
+                    ))}
+                  </Skills>
+                </SkillSection>
+                {/* <SkillSection>
                   <H5>Professional</H5>
                   <Skills>
                     {sections.skills_professional.map(skill => (
                       <Skill>{skill}</Skill>
                     ))}
                   </Skills>
-                </SkillSection>
+                </SkillSection> */}
               </SkillsWrapper>
 
               <H4>Experience</H4>

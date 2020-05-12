@@ -21,25 +21,11 @@
       "Styled Components, Bootstrap",
       "JavaScript ES6",
       "React, Redux",
-      "Node.js, Express",
+      "Node.js, Express", "Knex",
       "SQL, PostgreSQL, SQLite",
-      "Knex, Sequelize",
       "Git, GitHub",
-      "Jest, Jasmine",
+      "React Testing Library, Jest",
       "Python"
-    ],
-    "skills_professional": [
-      "Enterprise client support",
-      "Remote team leadership",
-      "Cross-functional team communication",
-      "Problem-solving",
-      "Resourcefulness",
-      "Mentorship",
-      "Tutoring",
-      "Attention to detail",
-      "Critical thinking",
-      "Creative thinking",
-      "Curiosity"
     ],
     "experience": [
       {

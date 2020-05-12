@@ -1,0 +1,136 @@
+[
+    {
+      "skills_designer": [
+        "Adobe Creative Suite",
+        "Photoshop",
+        "Bridge",
+        "InDesign",
+        "Illustrator",
+        "XD",
+        "Figma",
+        "Web Design",
+        "User Experience Design",
+        "Photo Retouching",
+        "Logo Creation",
+        "Digital Asset Management"
+      ],
+      "skills_developer": [
+        "HTML5",
+        "CSS, SASS/LESS",
+        "Material UI, Semantic UI",
+        "Styled Components, Bootstrap",
+        "JavaScript ES6",
+        "React, Redux",
+        "Node.js, Express",
+        "SQL, PostgreSQL, SQLite",
+        "Knex, Sequelize",
+        "Git, GitHub",
+        "Jest, Jasmine",
+        "Python"
+      ],
+      "skills_professional": [
+        "Enterprise client support",
+        "Remote team leadership",
+        "Cross-functional team communication",
+        "Problem-solving",
+        "Resourcefulness",
+        "Mentorship",
+        "Tutoring",
+        "Attention to detail",
+        "Critical thinking",
+        "Creative thinking",
+        "Curiosity"
+      ],
+      "experience": [
+        {
+          "company": "Lambda School",
+          "title": "Team Lead",
+          "location": "Remote/NYC",
+          "date": "2019-present",
+          "description": [
+            "Leading daily remote standups and individual meetings to assess projects and lesson material",
+            "Project lead giving support and guidance for student build sprint weeks",
+            "Documenting student progress and collaborating with administrators to recognize issues and solutions",
+            "Overseeing and guiding students to ensure a welcoming environment to learn and share remotely"
+          ]
+        },
+        {
+          "company": "Bright River",
+          "title": "US Production Manager, Client Support",
+          "location": "NYC",
+          "date": "2017-2018",
+          "description": [
+            "Troubleshooting applications, databases and scripts by analyzing system logs and reporting defects",
+            "Utilizing analysis of KPIs and QA feedback to meet SLA deadlines and client expectations",
+            "Managing ongoing support and communication with enterprise and corporate clients"
+          ]
+        },
+        {
+          "company": "Saks Fifth Avenue",
+          "title": "Saks.com Lead Image Editor",
+          "location": "NYC",
+          "date": "2016-2017",
+          "description": [
+            "Improving workflow efficiency by implementing cloud-based imaging solutions",
+            "Meeting strict image-to-site timelines and QA adherence of imagery and video content",
+            "Partnering with remote teams to analyze and resolve complex workflow bottlenecks"
+          ]
+        },
+        {
+          "company": "Lord & Taylor",
+          "title": "eCommerce Imaging Manager",
+          "location": "NYC",
+          "date": "2013-2015",
+          "description": [
+            "Overseeing the processing and uploading of up to 23,000 digital assets per month",
+            "Onboarding and training new hires and producing best-practice guideline materials"
+          ]
+        },
+        {
+          "company": "Lord & Taylor",
+          "title": "Digital Imaging Editor",
+          "location": "NYC",
+          "date": "2011-2013",
+          "description": [
+            "Assisting site migration of all images to new web platform, batch renaming to new standard",
+            "Quality assurance and retouching of editorial email, homepage and banner images"
+          ]
+        }
+      ],
+      "other_experience": [
+        {
+          "organization": "Hacker Hours Meetup Group",
+          "role": "Co-Organizer and Event Host",
+          "location": "Brooklyn, NY",
+          "date": "2019"
+        },
+        {
+          "organization": "Smashing Conference, Smashing Mag",
+          "role": "Event Volunteer",
+          "location": "NYC",
+          "date": "Oct 2019"
+        },
+        {
+          "organization": "JAMstack Developer Conference",
+          "role": "Event Volunteer",
+          "location": "NYC",
+          "date": "Apr 2019"
+        }
+      ],
+      "education": [
+        {
+          "school": "Lambda School",
+          "degree": "Web Development and Computer Science",
+          "location": "NYC",
+          "date": "2019-2020"
+        },
+        {
+          "school": "Parsons The New School of Design",
+          "degree": "BFA, Photography",
+          "location": "NYC",
+          "date": "2007-2011"
+        }
+      ]
+    }
+  ]
+  
