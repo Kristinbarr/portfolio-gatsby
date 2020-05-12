@@ -15,7 +15,8 @@
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-react-helmet": "^3.1.14",
-    "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-remark-images": "^3.1.44",
     "gatsby-source-filesystem": "^2.1.38",
     "gatsby-transformer-json": "^2.2.22",
     "gatsby-transformer-remark": "^2.6.43",
@@ -28,7 +29,6 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-
   "keywords": [
     "kristin barr",
     "gatsby",

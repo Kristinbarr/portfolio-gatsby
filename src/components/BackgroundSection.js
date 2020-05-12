@@ -9,6 +9,12 @@ const BgInnerContainer = styled.div`
   justify-content: space-between;
   flex-direction: column;
   min-height: calc(100vh - 72px);
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 82px)
+  }
+  @media (max-width: 576px) {
+    min-height: calc(100vh - 123px)
+  }
   margin: 0 auto;
 `
 
@@ -47,16 +53,17 @@ const BackgroundSection = ({ className, children }) => {
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
-  min-height: calc(100vh - 72px);
-  background-position: center;
-  background-repeat: repeat-y;
+  // min-height: calc(100vh - 72px);
+  // min-height: calc(100vh - 82px);
+  // background-position: center;
+  background-repeat: repeat-x;
   background-size: cover;
   background-color: transparent;
   overflow: hidden;
 
-  @media (max-width: 768px) {
-    min-height: calc(100vh - 78px);
-  }
+  // @media (max-width: 768px) {
+  //   min-height: calc(100vh - 90px)
+  // }
 
   // These three crucial styles (if existing) are directly parsed and added to
   // the pseudo-elements without further ado (except when overwritten).
