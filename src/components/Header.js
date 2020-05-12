@@ -47,14 +47,14 @@ const TitleLink = styled(Link)`
   @media (max-width: 992px) {
     padding-right: 0;
   }
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 const TitleDescriptions = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 768px) {
-    margin-left: 0.5rem;
-  }
 `
 const Description = styled.span`
   font-size: 0.9rem;
@@ -78,11 +78,7 @@ const NavLinks = styled.h5`
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
-  @media (max-width: 768px) {
-    // display: none;
-  }
   @media (max-width: 576px) {
-
     margin-top: 1rem;
   }
 `
@@ -98,9 +94,6 @@ const NavLink = styled(Link)`
   @media (max-width: 992px) {
     padding: 0 .75rem;
     font-size: .75rem;
-  }
-  @media (max-width: 768px) {
-    // padding: 0 0.8rem;
   }
 `
 const NavLinkText = styled.p`
