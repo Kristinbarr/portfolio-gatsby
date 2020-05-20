@@ -81,6 +81,11 @@ const IndexPage = () => (
             projects from concept to completion through teamwork, problem
             solving and thoughtful design.
           </p>
+          <br/>
+          <p>
+            I'm based in New York City (Brooklyn) and also love things like
+            cycling, podcasts, sewing and pets.
+          </p>
         </StyledWrapperLeft>
         <StyledWrapperRight>
           <Headshot />
