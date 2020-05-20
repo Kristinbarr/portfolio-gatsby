@@ -32,7 +32,7 @@ const Projects = () => {
             details
             image {
               childImageSharp {
-                fluid(quality: 100, maxWidth: 200) {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
