@@ -3,6 +3,77 @@ import { useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import styled from "@emotion/styled"
 
+const ProjectPreview = ({
+  title,
+  slug,
+  description,
+  url_live,
+  url_code,
+  date,
+  details,
+  imageData,
+}) => {
+  const data = useStaticQuery(graphql`
+  {
+    file(name: { eq: "contact-github" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 100) {
+          src
+        }
+      }
+    }
+    imageSharp(original: { src: { regex: "/external-link/" } }) {
+      fluid(quality: 100, maxWidth: 100) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  `)
+  const linkIcon = data.imageSharp.fluid.src
+  const codeIcon = data.file.childImageSharp.fluid.src
+  return (
+    <ProjectContainer>
+      <StyledWrapperLeft>
+        <a href={`${url_live}`} target="_blank" rel="noopener noreferrer">
+          <Image fluid={imageData} alt={title} />
+        </a>
+      </StyledWrapperLeft>
+      <StyledWrapperRight>
+        <HGroup>
+          <div>
+            <H4>{title}</H4>
+            <H5>{description}</H5>
+            <H6>{date}</H6>
+          </div>
+          <IconLinkWrapper>
+            <ProjectLink
+              href={url_live}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <StyledIcon src={linkIcon} />
+            </ProjectLink>
+            <ProjectLink
+              href={url_code}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <StyledIcon src={codeIcon} />
+            </ProjectLink>
+          </IconLinkWrapper>
+        </HGroup>
+        <ul>
+          {details.map(detail => (
+            <Li>{detail}</Li>
+            ))}
+        </ul>
+      </StyledWrapperRight>
+    </ProjectContainer>
+  )
+}
+
+export default ProjectPreview
+
 // breakpoints = [576, 768, 992, 1200]
 
 const ProjectContainer = styled.div`
@@ -27,7 +98,7 @@ const ProjectContainer = styled.div`
   }
 `
 const StyledWrapperLeft = styled.div`
-  width: 23rem;
+  width: 50%;
   margin: 1rem 1rem 1rem 0.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out 0s;
@@ -36,6 +107,7 @@ const StyledWrapperLeft = styled.div`
   }
 `
 const StyledWrapperRight = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 2rem 0.25rem 0 0.85rem;
@@ -43,8 +115,6 @@ const StyledWrapperRight = styled.div`
     padding: 1rem 0;
     width: 90%;
   }
-`
-const StyledImage = styled(Image)`
 `
 const HGroup = styled.hgroup`
   display: flex;
@@ -80,74 +150,3 @@ const Li = styled.li`
   line-height: 1;
   margin-bottom: 0.25rem;
 `
-
-const ProjectPreview = ({
-  title,
-  slug,
-  description,
-  url_live,
-  url_code,
-  date,
-  details,
-  imageData,
-}) => {
-  const data = useStaticQuery(graphql`
-    {
-      file(name: { eq: "contact-github" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 100) {
-            src
-          }
-        }
-      }
-      imageSharp(original: { src: { regex: "/external-link/" } }) {
-        fluid(quality: 100, maxWidth: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  `)
-  const linkIcon = data.imageSharp.fluid.src
-  const codeIcon = data.file.childImageSharp.fluid.src
-  return (
-    <ProjectContainer>
-      <StyledWrapperLeft>
-        <a href={`${url_live}`} target="_blank" rel="noopener noreferrer">
-          <StyledImage fluid={imageData} alt={title} />
-        </a>
-      </StyledWrapperLeft>
-      <StyledWrapperRight>
-        <HGroup>
-          <div>
-            <H4>{title}</H4>
-            <H5>{description}</H5>
-            <H6>{date}</H6>
-          </div>
-          <IconLinkWrapper>
-            <ProjectLink
-              href={url_live}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <StyledIcon src={linkIcon} />
-            </ProjectLink>
-            <ProjectLink
-              href={url_code}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <StyledIcon src={codeIcon} />
-            </ProjectLink>
-          </IconLinkWrapper>
-        </HGroup>
-        <ul>
-          {details.map(detail => (
-            <Li>{detail}</Li>
-          ))}
-        </ul>
-      </StyledWrapperRight>
-    </ProjectContainer>
-  )
-}
-
-export default ProjectPreview
