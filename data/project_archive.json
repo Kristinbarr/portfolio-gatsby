@@ -80,6 +80,23 @@
         "Sole developer and designer for fully responsive marketing site - HTML, CSS (Sass), gifs",
         "Presented app for demo video: https://youtu.be/E1mbO6ztU6c"
       ]
+    },
+    {
+      
+      "title": "DevDesk Queue",
+      "slug": "dev-desk-queue",
+      "url_live": "https://devdeskqueue.netlify.com/",
+      "url_live_icon": "/images/external-link.png",
+      "url_code": "https://github.com/devdesk-queue-lambda/Login-About-Pages",
+      "url_code_icon": "/images/contacts-github.png",
+      "image": "./images/thumb-devdesk.png",
+      "description": "Digital ticketing system for Lambda students who need help and a platform for helpers to track current tasks.",
+      "date": "June 2019",
+      "details": [
+        "Collaborative build using React, Redux, Node, and Express",
+        "Developer and designer for marketing website built with HTML, CSS (Less, animations)",
+        "Figma: www.figma.com/file/KdTXZXklpNFQKbydAK9fcxLI/DevDesk-Queue-Marketing-Page"
+      ]
     }
   ]
   

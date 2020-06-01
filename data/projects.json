@@ -8,7 +8,7 @@
     "url_code_icon": "./images/contacts-github.png",
     "image": "./images/thumb-foundergrants.png",
     "description": "Grant aggregator for startup founders",
-    "date": "November-December 2019",
+    "date": "November 2019 - 2020",
     "details": [
       "App for startup founders to apply for grants to fund their ideas",
       "Working with a stakeholder to create, research and release features on a deadline",
@@ -40,11 +40,13 @@
     "url_code": "https://github.com/Kristinbarr/bwcda-frontend-react",
     "url_code_icon": "/images/contacts-github.png",
     "image": "./images/thumb-celebrity.png",
-    "description": "Timed celebrity quiz with leaderboard and scoreboard",
+    "description": "Interactive, timed celebrity quiz with scoreboard",
     "date": "August 2019",
     "details": [
-      "Collaborative build with 2 other React developers",
-      "React developer using HTML, CSS (Scss), React (hooks), utilizing RESTful APIs",
+      "Interactive 30-second quiz to guess celebrities that are dead or alive",
+      "includes a leaderboard where a logged-in user can save high scores",
+      "Collaborative build with 2 React developers and 1 Node developer",
+      "React developer using CSS (Scss), React (hooks), utilizes RESTful APIs",
       "Presented demo for app",
       "Designed using Figma"
     ]
