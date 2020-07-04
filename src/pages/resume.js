@@ -11,7 +11,7 @@ import ResumeDownload from "../components/ResumeDownload"
 const Resume = () => {
   const data = useStaticQuery(graphql`
   {
-      file(name: { eq: "KristinBarr_Resume" }) {
+      file(name: { eq: "KristinBarr_Resume_2020" }) {
         publicURL
       }
       resumeJson {
