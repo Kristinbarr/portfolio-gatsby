@@ -83,8 +83,8 @@ const IndexPage = () => (
           </p>
           <br/>
           <p>
-            I'm based in New York City (Brooklyn) and also love things like
-            cycling, podcasts, sewing and pets.
+            I'm based in New York City (Brooklyn) and in my free time, I enjoy things like
+            cycling, 3D printing, podcasts, sewing, and animals.
           </p>
         </StyledWrapperLeft>
         <StyledWrapperRight>
