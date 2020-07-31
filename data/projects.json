@@ -4,7 +4,7 @@
     "slug": "founder-grants",
     "url_live": "https://foundergrants.com/",
     "url_live_icon":"./images/external-link.png",
-    "url_code": "https://github.com/Lambda-School-Labs/startup-grant-database-fe",
+    "url_code": "https://github.com/Kristinbarr/founder-grants-fe",
     "url_code_icon": "./images/contacts-github.png",
     "image": "./images/thumb-foundergrants.png",
     "description": "Grant aggregator for startup founders",
