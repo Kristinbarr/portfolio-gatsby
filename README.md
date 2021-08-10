@@ -13,7 +13,7 @@
 Hi, I'm Kristin! I'm a web developer with a passion for making beautiful apps. I have experience designing and developing user interfaces, testing and debugging. I'm also an expert with a variety of development and imaging software, interfacing with remote teams and enterprise clientele, and team member onboarding. I'm eager to power projects from concept to completion through teamwork, problem solving and thoughtful design.
 </p>
 <p style='margin:30px; text-align:justify; text-justify:inter-character;'>
-I'm based in New York City (Brooklyn) and also love things like cycling, podcasts, sewing and pets.
+I'm based in New York City (Brooklyn) and also love things like roller skating, cycling, podcasts, sewing and pets.
 </p>
 
 <br/>
